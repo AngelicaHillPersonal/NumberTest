@@ -1,0 +1,99 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+
+	fmt.Println("Welcome to my Math's Coding Game. Hope you enjoy!")
+
+	for {
+		fmt.Println("Would you like to play this game now?")
+		a := ""
+		fmt.Scanln(&a)
+		if a == "yes" || a == "Yes" {
+			fmt.Println("Great!")
+			break
+		}
+		if a == "no" || a == "No" {
+			fmt.Println("Ok. Look forward to seeing you agian soon. Goodbye for now!")
+			return
+		}
+		fmt.Println("Please answer yes or no")
+	}
+
+	fmt.Println("What is 2 + 2?")
+	b := ""
+	fmt.Scanln(&b)
+	g := TwoPlusTwo(b)
+	fmt.Println(g)
+
+	fmt.Println("What is 5 + 5?")
+	c := ""
+	fmt.Scanln(&c)
+	h := FivePlusFive(c)
+	fmt.Println(h)
+
+	fmt.Println("What is 10 x 2?")
+	d := ""
+	fmt.Scanln(&d)
+	j := TenTimesTwo(d)
+	fmt.Println(j)
+
+	fmt.Println("What is 6 + 6?")
+	e := ""
+	fmt.Scanln(&e)
+	k := SixPlusSix(e)
+	fmt.Println(k)
+
+	fmt.Println("What is 4 + 4?")
+	f := ""
+	fmt.Scanln(&f)
+	l := FourPlusFour(f)
+	fmt.Println(l)
+
+	fmt.Println("Well done and Thank you :) Have a great day!")
+
+}
+
+func TwoPlusTwo(i string) bool {
+	if i == "4" {
+		return true
+	} else {
+		return false
+	}
+}
+
+func FivePlusFive(i string) bool {
+	if i == "10" {
+		return true
+	} else {
+		return false
+	}
+
+}
+
+func TenTimesTwo(i string) bool {
+	if i == "20" {
+		return true
+	} else {
+		return false
+	}
+}
+
+func SixPlusSix(i string) bool {
+	if i == "12" {
+		return true
+	} else {
+		return false
+	}
+}
+
+func FourPlusFour(i string) bool {
+	if i == "8" {
+		return true
+	} else {
+		return false
+	}
+}
